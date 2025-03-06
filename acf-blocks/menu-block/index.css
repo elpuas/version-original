@@ -1,0 +1,119 @@
+/* Menu Block Styles */
+.menu-block {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.menu-section {
+    margin-bottom: 4rem;
+}
+
+.menu-section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu-section-tagline {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.menu-section-title {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.menu-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.menu-items-container {
+    flex: 1 1 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.menu-column {
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 250px;
+}
+
+.menu-item {
+    margin-bottom: 1.5rem;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -4px;
+    gap: 1rem;
+
+    .wp-block-separator {
+        border: none;
+        border-bottom: 1px dotted var(--wp--preset--color--cyan-bluish-gray);
+        width: 100%;
+    }
+}
+
+.menu-item-name {
+    font-size: 1.1rem;
+    margin: 0;
+    padding-right: 1rem;
+    font-family: var(--wp--preset--font-family--cormorant-garamond);
+    flex-shrink: 0;
+}
+
+.menu-item-price {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.menu-item-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.25rem;
+    color: var(--wp--preset--color--cyan-bluish-gray);
+}
+
+.menu-section-image {
+    flex: 1 1 35%;
+    min-width: 250px;
+    height: 400px;
+    margin-bottom: 3rem;
+
+    
+    &.alignfull {
+        margin-left: calc( -100vw / 2 + 100% / 2 );
+        margin-right: calc( -100vw / 2 + 100% / 2 );
+        max-width: 100vw;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .menu-section-content {
+        flex-direction: column;
+    }
+    
+    .menu-section-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+} 
