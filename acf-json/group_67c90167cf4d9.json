@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Aqui va algo",
+            "message": "Este bloque muestra el Menú del Restaurante\r\nEl contenido de este bloque no se edita directamente en el editor. Para modificar los platillos y precios, ve a:\r\n\r\n➡ En el panel de administración: Menú del Restaurante\r\n\r\nLos cambios realizados en estos ajustes se reflejarán automáticamente en la web.",
             "new_lines": "wpautop",
             "esc_html": 0
         }
@@ -39,5 +39,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1741226394
+    "modified": 1741230535
 }
