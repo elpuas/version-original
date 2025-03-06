@@ -1,0 +1,69 @@
+Here’s the refined version of your instructions in a clear, structured, and instructive format:
+
+⸻
+
+Project Overview: Restaurant Block Theme
+
+Project Description
+
+This is a WordPress Block Theme for a restaurant. The website consists of a single-page layout with a dynamic menu management system using Advanced Custom Fields (ACF) and Theme Options (Menu settings). The theme must be lightweight, optimized, and built with modern development practices using WordPress Scripts, Vanilla CSS, and block-based editing.
+
+⸻
+
+Development Guidelines
+
+1. Technology Stack
+	•	WordPress Block Theme with Full Site Editing (FSE)
+	•	ACF (Advanced Custom Fields) for managing restaurant menu items
+	•	Theme Options (Customizer or theme.json) for global settings
+	•	WordPress Scripts (@wordpress/scripts) for automation and builds
+	•	Modern Vanilla CSS for styling, avoiding unnecessary frameworks
+	•	Minimal JavaScript, using only Vanilla JS or necessary dependencies
+
+⸻
+
+Project Structure
+
+2. Theme Features
+	•	One-page layout using block-based editing
+	•	Restaurant menu managed via ACF fields
+	•	Theme options to control settings related to the menu
+	•	Custom Gutenberg block styles and variations
+	•	Optimized for performance with clean CSS and minimal JavaScript
+	•	SEO-friendly structure with semantic HTML
+	•	Fully responsive design, optimized for various screen sizes
+
+⸻
+
+Development Requirements
+
+3. Setup & Dependencies
+	•	Install and configure @wordpress/scripts for modern build tools
+	•	Use theme.json for global styles and avoid external stylesheets when possible
+	•	Enqueue styles and scripts correctly using wp_enqueue_style and wp_enqueue_script
+	•	Ensure compatibility with the latest WordPress versions
+
+4. Custom Blocks & ACF
+	•	Define ACF fields for the restaurant menu, including categories, items, prices, and descriptions
+	•	Integrate ACF fields with the block editor for easy content management
+	•	Create reusable Gutenberg block patterns for the menu and other restaurant sections
+
+5. CSS Strategy
+	•	Use Vanilla CSS following best practices for maintainability
+	•	Avoid CSS frameworks such as Bootstrap or Tailwind
+	•	Implement modern CSS techniques including CSS Grid, Flexbox, and CSS variables
+
+6. JavaScript Guidelines
+	•	Utilize WordPress Scripts (wp-scripts) for bundling and automation
+	•	Minimize JavaScript usage, ensuring scripts are lightweight and efficient
+	•	Enqueue scripts properly in WordPress using wp_enqueue_script
+
+⸻
+
+Implementation Steps
+	1.	Set up the WordPress theme structure, including folders, functions, and assets
+	2.	Define and implement ACF fields for restaurant menu management
+	3.	Create a theme options panel for configuring menu settings
+	4.	Develop reusable block patterns for restaurant sections
+
+This theme must follow modern WordPress development standards, ensuring flexibility, performance, and maintainability.
