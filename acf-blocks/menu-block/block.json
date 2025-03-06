@@ -1,0 +1,16 @@
+{
+    "name": "version-original/menu-block",
+    "title": "Menu Block",
+    "description": "A custom menu block that uses ACF fields.",
+    "style": [ "file:./index.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["menu", "block"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
