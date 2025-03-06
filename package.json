@@ -4,15 +4,26 @@
   "description": "A Online Menu",
   "main": "index.js",
   "scripts": {
-        "build": "wp-scripts build",
-        "format": "wp-scripts format",
-        "lint:css": "wp-scripts lint-style",
-        "lint:js": "wp-scripts lint-js",
-        "start": "wp-scripts start"
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "stylelint '**/*.css'",
+    "lint:js": "eslint '**/*.js'",
+    "lint:php": "composer lint:php",
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:php",
+    "format:js": "eslint --fix '**/*.js'",
+    "format:css": "stylelint --fix '**/*.css'",
+    "format:php": "composer format:php",
+    "format:all": "npm run format:js && npm run format:css && npm run format:php",
+    "start": "wp-scripts start"
   },
   "author": "ElPuas Digital Crafts",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/scripts": "^30.12.0"
+    "@wordpress/eslint-plugin": "^17.3.0",
+    "@wordpress/scripts": "^30.12.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard": "^29.0.0"
   }
 }

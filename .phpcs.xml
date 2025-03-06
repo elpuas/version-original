@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ruleset name="WordPressTheme">
+    <description>PHP Code Standards for WordPress Block Theme</description>
+    
+    <!-- Scan all files in directory -->
+    <file>.</file>
+    
+    <!-- Exclude patterns -->
+    <exclude-pattern>/vendor/*</exclude-pattern>
+    <exclude-pattern>/node_modules/*</exclude-pattern>
+    <exclude-pattern>/build/*</exclude-pattern>
+    <exclude-pattern>/dist/*</exclude-pattern>
+    <exclude-pattern>/.git/*</exclude-pattern>
+    <exclude-pattern>/.github/*</exclude-pattern>
+    <exclude-pattern>/.wordpress-org/*</exclude-pattern>
+    <exclude-pattern>/assets/*</exclude-pattern>
+    <exclude-pattern>*.js</exclude-pattern>
+    <exclude-pattern>*.css</exclude-pattern>
+    <exclude-pattern>*.scss</exclude-pattern>
+    <exclude-pattern>*.json</exclude-pattern>
+    <exclude-pattern>*.xml</exclude-pattern>
+    <exclude-pattern>*.txt</exclude-pattern>
+    <exclude-pattern>*.md</exclude-pattern>
+
+    <!-- Include WordPress standards -->
+    <rule ref="WordPress-Core"/>
+    <rule ref="WordPress-Extra"/>
+    <rule ref="WordPress-Docs"/>
+    <rule ref="PSR12"/>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    
+    <!-- Check for PHP cross-version compatibility -->
+    <config name="testVersion" value="7.4-" />
+    <rule ref="PHPCompatibilityWP" />
+
+    <!-- Set minimum WordPress version compatibility -->
+    <config name="minimum_supported_wp_version" value="5.9" />
+
+    <!-- Verify that the text_domain is set to the desired text-domain -->
+    <rule ref="WordPress.WP.I18n">
+        <properties>
+            <property name="text_domain" type="array" value="version-original" />
+        </properties>
+    </rule>
+
+    <!-- Verify that everything in the global namespace is prefixed with a theme specific prefix -->
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+        <properties>
+            <property name="prefixes" type="array" value="version_original" />
+        </properties>
+    </rule>
+</ruleset> 
