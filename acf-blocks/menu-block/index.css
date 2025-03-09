@@ -1,5 +1,8 @@
 /* Menu Block Styles */
 .menu-block {
+    container-type: inline-size;
+    container-name: menu;
+
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -12,6 +15,10 @@
 .menu-section-header {
     text-align: center;
     margin-bottom: 2rem;
+
+    @container menu (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 }
 
 .menu-section-tagline {
@@ -86,6 +93,7 @@
 }
 
 .menu-section-image {
+    opacity: 0;
     flex: 1 1 35%;
     min-width: 250px;
     height: 400px;

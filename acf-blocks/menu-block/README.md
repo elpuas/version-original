@@ -9,6 +9,18 @@ This block displays a restaurant menu with sections and items in a two-column la
 - Shows dish names, descriptions, and prices
 - Optional section images
 - Fully responsive design
+- **Animated slide-in effect** for menu items
+
+## Animation Features
+
+The menu block includes dynamic animations that trigger as users scroll:
+
+- Menu items slide in from the left with a staggered delay
+- Animation delays are calculated dynamically based on item position
+- Uses Intersection Observer to trigger animations when sections come into view
+- Works with any number of menu items (not limited to a fixed number)
+- Section headers fade in and section images slide up for a complete effect
+- Animations are disabled for users who prefer reduced motion (respects prefers-reduced-motion setting)
 
 ## ACF Fields Required
 
@@ -57,4 +69,11 @@ This block expects the following ACF fields to be set up in the Theme Options:
 
 ## Styling
 
-The block includes responsive styling that works on all device sizes. The menu items are displayed in two columns on larger screens and stack on mobile devices. 
+The block includes responsive styling that works on all device sizes. The menu items are displayed in two columns on larger screens and stack on mobile devices.
+
+## Technical Details
+
+- Uses JavaScript for dynamic animation calculations
+- Implements Intersection Observer API for scroll-based animations
+- Dynamically injects animation keyframes via JavaScript
+- Handles any number of menu items with proper staggered delays 
