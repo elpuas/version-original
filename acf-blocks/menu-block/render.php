@@ -47,12 +47,12 @@ if (!$menu_items || !is_array($menu_items)) {
                 </div>
                 <?php endif; ?>
             <div class="menu-section-header">
-                <?php if (!empty($tagline)) : ?>
-                    <p class="menu-section-tagline"><?php echo esc_html($tagline); ?></p>
-                <?php endif; ?>
-                
                 <?php if (!empty($title)) : ?>
                     <h2 class="menu-section-title"><?php echo esc_html($title); ?></h2>
+                <?php endif; ?>
+
+                <?php if (!empty($tagline)) : ?>
+                    <p class="menu-section-tagline"><?php echo esc_html($tagline); ?></p>
                 <?php endif; ?>
             </div>
             
