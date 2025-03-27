@@ -1,0 +1,27 @@
+{
+    "name": "acf/menu-block",
+    "title": "Restaurant Menu",
+    "description": "Displays a restaurant menu with sections and items in a two-column layout.",
+    "style": [ "file:./index.css" ],
+    "script": [ "file:./index.js" ],
+    "category": "theme",
+    "icon": "food",
+    "keywords": ["menu", "restaurant", "food", "dishes"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["wide", "full"],
+        "anchor": true,
+        "html": false
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "preview_image_help": "This block displays the restaurant menu."
+            }
+        }
+    }
+}

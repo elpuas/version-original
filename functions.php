@@ -68,3 +68,9 @@ function version_original_frontend_assets() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'version_original_frontend_assets' );
+
+function version_original_register_acf_blocks() {
+    register_block_type( __DIR__ . '/acf-blocks/menu-block' );
+}
+
+add_action( 'init', 'version_original_register_acf_blocks' );
